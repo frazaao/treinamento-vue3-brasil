@@ -29,7 +29,7 @@
         class="flex justify-between py-3 px-5 w-full lg:w-2/3 mt-2 rounded items-center bg-brand-gray"
       >
         <span v-if="state.hasError">Erro ao carregar a API Key</span>
-        <span v-else>{{ store.User.currentUser.apiKey }}</span>
+        <span v-else id="api-key">{{ store.User.currentUser.apiKey }}</span>
 
         <div class="flex gap-2" v-if="!state.hasError">
           <Icon
@@ -46,6 +46,7 @@
             size="24"
             :color="brandColors.graydark"
             class="cursor-pointer"
+            id="get-new-apikey"
           />
         </div>
       </div>

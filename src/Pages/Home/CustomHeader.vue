@@ -15,6 +15,7 @@
               <button
                 class="hover:brightness-95 transition-all px-6 py-2 font-bold rounded-full text-white focus:outline-none"
                 @click="() => emit('create-account')"
+                id="header-create-account-button"
               >
                 Crie uma conta
               </button>
@@ -24,6 +25,7 @@
               <button
                 class="hover:brightness-95 transition-all px-6 py-2 font-bold bg-white rounded-full text-brand-main focus:outline-none"
                 @click="() => emit('login')"
+                id="header-login-button"
               >
                 Entrar
               </button>
@@ -46,6 +48,8 @@
         <div>
           <button
             class="hover:scale-105 transition-all mt-10 px-6 py-2 font-bold bg-white rounded-full text-brand-main focus:outline-none"
+            @click="() => emit('create-account')"
+            id="cta-create-account-button"
           >
             Crie uma conta grátis
           </button>

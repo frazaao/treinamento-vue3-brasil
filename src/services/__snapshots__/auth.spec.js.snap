@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AuthService Should return a token when user login 1`] = `
+Object {
+  "data": Object {
+    "token": "123123123",
+  },
+  "errors": null,
+}
+`;
+
+exports[`AuthService Should return a user when user register 1`] = `
+Object {
+  "data": Object {
+    "email": "email@example.com",
+    "name": "John",
+    "password": "1234",
+  },
+  "errors": null,
+}
+`;

@@ -2,7 +2,7 @@
   <div class="flex flex-col">
     <h1 class="text-2xl font-regular text-brand-graydark">Filtros</h1>
 
-    <ul class="flex flex-col mt-3 list-none">
+    <ul class="flex flex-col mt-3 list-none" id="filters">
       <li
         v-for="filter in state.filters"
         :key="filter.label"

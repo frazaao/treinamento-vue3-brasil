@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HeaderLogged /> Should render header logged correctly 1`] = `
+<div class="flex justify-center w-full h-28 bg-brand-main">
+  <div class="flex items-center justify-between w-4/5 max-w-6xl py-10">
+    <picture class="w-28 lg:w-36"><img class="w-full" src="" alt="Logomarca"></picture>
+    <nav>
+      <ul class="flex list-none">
+        <li class="px-6 py-2 mr-2 font-bold text-white rounded-full cursor-pointer focus:outline-none"> Credenciais </li>
+        <li class="px-6 py-2 mr-2 font-bold text-white rounded-full cursor-pointer focus:outline-none"> Feedbacks </li>
+        <li class="px-6 py-2 mr-2 font-bold bg-white text-brand-main rounded-full cursor-pointer focus:outline-none" id="logout-button">...</li>
+      </ul>
+    </nav>
+  </div>
+</div>
+`;

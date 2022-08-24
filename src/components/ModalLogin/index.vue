@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between">
+  <div class="flex justify-between" id="modal-login">
     <h1 class="text-4xl font-black text-gray-800">Entre na sua conta</h1>
 
     <button class="text-4xl focus:outline-none text-gray-600" @click="close">
@@ -18,12 +18,15 @@
           placeholder="Seu melhor email"
           v-model="state.email.value"
           :class="{ 'border-brand-danger': !!state.email.errorMessage }"
+          id="email-field"
         />
         <span
           class="block font-medium text-brand-danger text-xs"
           v-if="!!state.email.errorMessage"
-          >{{ state.email.errorMessage }}</span
+          id="email-error"
         >
+          {{ state.email.errorMessage }}
+        </span>
       </label>
 
       <label class="block mt-5">
@@ -35,12 +38,15 @@
           placeholder="Sua senha segura"
           v-model="state.password.value"
           :class="{ 'border-brand-danger': !!state.password.errorMessage }"
+          id="password-field"
         />
         <span
           class="block font-medium text-brand-danger text-xs"
           v-if="!!state.password.errorMessage"
-          >{{ state.password.errorMessage }}</span
+          id="password-error"
         >
+          {{ state.password.errorMessage }}
+        </span>
       </label>
 
       <button
@@ -48,6 +54,7 @@
         class="px-8 py-3 mt-10 text-2xl font-bold text-white rounded-full bg-brand-main focus:outline-none transition-all hover:scale-105"
         :disabled="state.isLoading"
         type="submit"
+        id="submit-button"
       >
         <Icon v-if="state.isLoading" name="loading" class="animate-spin" />
         <span v-else>Entrar</span>

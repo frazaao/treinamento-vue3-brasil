@@ -23,7 +23,7 @@
           </template>
         </suspense>
       </div>
-      <div class="col-span-3 px-10 pt-20">
+      <div class="col-span-3 px-10 pt-20" id="feedbacks">
         <p
           v-if="state.hasError"
           class="textlg text-center text-gray-800 font-regular"
